@@ -32,15 +32,15 @@ sqa %>%
   scale_colour_nord(palette = "aurora", reverse = T) +
   scale_fill_nord(palette = "aurora", reverse = T) +
   labs(x = "Year of Award",
-       y = "Percentage Students",
+       y = "Percentage Students +/- SD",
        title = "Proportion of grades A-C at Higher by Scottish Index of Multiple Deprivation",
        subtitle = "Data from SQA Table A13, per Aamer Anwar Tweet",
        fill = "SIMD",
        colour = "SIMD",
        shape = "Actual vs Estimated") +
-  theme (panel.background = element_rect(fill = "grey90", colour ="grey90" ),
-         plot.background = element_rect(fill = "grey90"),
-         legend.box.background = element_rect(fill = "grey90", colour ="grey90"),
+  theme (panel.background = element_rect(fill = "ghostwhite", colour ="ghostwhite" ),
+         plot.background = element_rect(fill = "ghostwhite"),
+         legend.background = element_blank(),
          text=element_text(family="Calibri Light")) +
   annotate("text", label = "https://github.com/jillymackay/ggplotexperiements/sqa_2020", 
            x = 2019, y = 60, size = 3, colour = "#486090", family = "Calibri Light" ) 
