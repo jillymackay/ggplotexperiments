@@ -2,10 +2,10 @@
 
 
 library(tidyverse)
-library(lubridate)
 library(emojifont)
 library(extrafont)
 library(nord)
+library(lubridate)
 
 
 
@@ -29,7 +29,4 @@ moods %>%
         plot.background = element_rect(fill = "#2E3440"),
         plot.title = element_text(family = "Ink Free", colour = "#8FBCBB", size = 18, hjust = 0.5)) +
   scale_colour_nord(palette = "aurora") +
-  labs (title = "A Mood Tracker") +
-  #geom_text(aes(label = "https://github.com/jillymackay/ggplotexperiments", x = dmy("2020-06-28"), y = "angry"),
-            family ="Calibri",
-            colour ="#2E3440")
+  labs (title = "A Mood Tracker")  
