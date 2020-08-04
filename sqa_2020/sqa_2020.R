@@ -30,7 +30,7 @@ sqa %>%
   geom_point(aes(x = year, y = highers_ac, colour = simcat, shape = results), size = 6) +
   theme_classic() +
   scale_colour_nord(palette = "aurora", reverse = T) +
-  scale_fill_nord(palette = "aurora", reverse = T) +
+  scale_fill_nord(palette = "aurora", reverse = F) +
   labs(x = "Year of Award",
        y = "Percentage Students +/- SD",
        title = "Proportion of grades A-C at Higher by Scottish Index of Multiple Deprivation",
